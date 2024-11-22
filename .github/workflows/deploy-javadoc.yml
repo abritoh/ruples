@@ -32,12 +32,13 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
 
-        # Clone the gh-pages branch if it exists, otherwise create it
-        if git ls-remote --heads origin gh-pages; then
+        # Check if the gh-pages branch truly exists remotely
+        BRANCH_EXISTS=$(git ls-remote --heads origin gh-pages | wc -l)
+        if [ "$BRANCH_EXISTS" -eq 1 ]; then
           echo "gh-pages branch exists. Cloning..."
-          git clone --single-branch --branch gh-pages https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
+          git clone --branch gh-pages https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
         else
-          echo "gh-pages branch does not exist. Creating..."
+          echo "gh-pages branch does not exist. Re-creating..."
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
           cd gh-pages
           git checkout --orphan gh-pages
@@ -45,17 +46,17 @@ jobs:
           echo "# GitHub Pages" > README.md
           git add README.md
           git commit -m "Initialize gh-pages branch"
-          git push -u origin gh-pages
+          git push origin gh-pages
           cd ..
         fi
-        
+
         cd gh-pages
 
         # Create versioned folders for main and test Javadocs
         mkdir -p docs/${VERSION}/apidocs
         mkdir -p docs/${VERSION}/testapidocs
 
-        # Copy the newly generated Javadocs to the versioned folders
+        # Copy the newly generated Javadocs from target/reports
         cp -r ../target/reports/apidocs/* docs/${VERSION}/apidocs/
         cp -r ../target/reports/testapidocs/* docs/${VERSION}/testapidocs/
 
@@ -65,4 +66,4 @@ jobs:
         # Commit and push the changes
         git add docs/${VERSION}
         git commit -m "Deploy Javadocs for version ${VERSION}" || echo "No changes to commit"
-        git push -f origin gh-pages
+        git push origin gh-pages
