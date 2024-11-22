@@ -19,13 +19,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 
- * 
- * Validates the following methods:
- * 
- * 1. `Ruple.of(...)` - A factory method to create a Ruple.
- * 2. `Ruple.fromRecord(Ruple)` - Converts a Ruple to a Tuple.
- * 
+ * <p>Perfoms unit-tests to methods for converting Ruple to Tuple.</p>
+ * <p>Validates the following methods:</p>
+ * <ol>
+ * <li>`Ruple.of(...)` - A factory method to create a Ruple.</li>
+ * <li>`Ruple.fromRecord(Ruple)` - Converts a Ruple to a Tuple.</li>
+ * </ol>
  * This involves comparing each value between the Ruple and the resulting Tuple.
  * 
  * <p><b>Class Diagram:</b></p>

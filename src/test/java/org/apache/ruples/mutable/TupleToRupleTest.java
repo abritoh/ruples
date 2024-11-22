@@ -9,11 +9,12 @@ import org.junit.jupiter.api.Test;
 import org.apache.ruples.immutable.*;
 
 /**
- * Validates the following methods:
- * 
- * 1. `Tuple.of(...)` - A factory method to create a Tuple.
- * 2. `Ruple.toRecord(Tuple)` - Converts a Tuple to a Ruple.
- * 
+ * <p>Perfoms unit-tests to methods for converting Tuple to Ruple.</p>
+ * <p>Validates the following methods:</p>
+ * <ol>
+ * <li>`Tuple.of(...)` - A factory method to create a Tuple.</li>
+ * <li>`Ruple.toRecord(Tuple)` - Converts a Tuple to a Ruple.</li>
+ * </ol>
  * This involves comparing each value between the Ruple and the resulting Tuple.
  *  
  * <p><b>Class Diagram:</b></p>

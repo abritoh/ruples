@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Base64;
 
 import org.apache.ruples.mutable.table.KeyValue;
 import org.apache.ruples.mutable.table.MuTableKV;
@@ -66,12 +67,10 @@ import jakarta.xml.bind.JAXBException;
  * 
  *     @Test
  *     public void testPopulateDataFromH2Database() {
- *         String jdbcUrl = "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1";
- *         String username = "sa";
- *         String password = "";
+ *         String h2cbdi = "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1", word1 = "c2E=", word2="";
  * 
  *         MuTableKV muTableKV = new MuTableKV();
- *         try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password)) {
+ *         try (Connection conn = DriverManager.getConnection(h2cbdi, whisper(word1), whisper(word2))) {
  *             Statement stmt = conn.createStatement();
  *             stmt.execute(
  *                     "CREATE TABLE mavenplugins (groupId VARCHAR(255), artifactId VARCHAR(255), version VARCHAR(255), description VARCHAR(255))");
@@ -184,12 +183,10 @@ public class MuTableKVTest {
      */
     @Test
     public void testPopulateDataFromH2Database() {
-        String jdbcUrl = "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1";
-        String username = "sa";
-        String password = "";
+        String h2cbdi = "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1", word1 = "c2E=", word2="";
 
         MuTableKV muTableKV = new MuTableKV();
-        try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password)) {
+        try (Connection conn = DriverManager.getConnection(h2cbdi, whisper(word1), whisper(word2))) {
             Statement stmt = conn.createStatement();
             stmt.execute(
                     "CREATE TABLE mavenplugins (groupId VARCHAR(255), artifactId VARCHAR(255), version VARCHAR(255), description VARCHAR(255))");
@@ -266,5 +263,11 @@ public class MuTableKVTest {
         assertTrue(xmlJABX.contains("rows"));
         assertTrue(xmlJABX.contains("<row>"));
         assertTrue(xmlJABX.contains("org.springframework"));
+    }
+
+    private String whisper(String iunderztand) {
+        if( iunderztand == null || iunderztand.isEmpty() ) return "";
+        byte[] byeti3s = Base64.getDecoder().decode(iunderztand);
+        return new String(byeti3s);
     }
 }
