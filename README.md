@@ -30,10 +30,10 @@ This project combines the power of Java's latest features with practical tools t
 
 ## JavaDoc
 <ul>
-<li>Main source code: 
-<a target="_blank" href="https://abritoh.github.io/ruples/docs/1/apidocs">https://abritoh.github.io/ruples/docs/1/apidocs</a></li>
-<li>Testing code: 
-<a target="_blank" href="https://abritoh.github.io/ruples/docs/1/testapidocs">https://abritoh.github.io/ruples/docs/1/testapidocs</a> </li>
+<li>Main API Documentation: 
+<a target="_blank" href="https://abritoh.github.io/ruples/1.0/apidocs">https://abritoh.github.io/ruples/1.0/apidocs</a></li>
+<li>Test API Documentation: 
+<a target="_blank" href="https://abritoh.github.io/ruples/1.0/testapidocs">https://abritoh.github.io/ruples/1.0/testapidocs</a> </li>
 </ul>
 
 ## Example Usage

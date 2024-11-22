@@ -1,3 +1,8 @@
+# -----------------------------------------------------------------------------
+# Github Workflow backup 2024-1122 
+# This version of WF executes well, just require to add one step to install
+# Graphviz library on Github deployment server.
+# ------------------------------------------------------------------------------
 name: Deploy Versioned Javadocs to GitHub Pages
 
 on:
@@ -16,11 +21,8 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v3
       with:
-        java-version: '17' 
+        java-version: '17'
         distribution: 'temurin'
-
-    - name: Install Graphviz
-      run: sudo apt-get update && sudo apt-get install -y graphviz
 
     - name: Build project and generate Javadocs
       run: |
@@ -35,40 +37,38 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
 
-        # Check if gh-pages branch exists
-        if git ls-remote --heads origin gh-pages; then
-          echo "gh-pages branch exists"
-          git clone --single-branch --branch gh-pages https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
+        # Check if the gh-pages branch truly exists remotely
+        BRANCH_EXISTS=$(git ls-remote --heads origin gh-pages | wc -l)
+        if [ "$BRANCH_EXISTS" -eq 1 ]; then
+          echo "gh-pages branch exists. Cloning..."
+          git clone --branch gh-pages https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
         else
-          echo "gh-pages branch does not exist. Creating..."
+          echo "gh-pages branch does not exist. Re-creating..."
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
           cd gh-pages
           git checkout --orphan gh-pages
           git reset --hard
-          git commit --allow-empty -m "Initial commit on gh-pages branch"
+          echo "# GitHub Pages" > README.md
+          git add README.md
+          git commit -m "Initialize gh-pages branch"
           git push origin gh-pages
+          cd ..
         fi
-        
+
         cd gh-pages
 
         # Create versioned folders for main and test Javadocs
         mkdir -p docs/${VERSION}/apidocs
         mkdir -p docs/${VERSION}/testapidocs
 
-        # Copy the newly generated Javadocs to the versioned folders
+        # Copy the newly generated Javadocs from target/reports
         cp -r ../target/reports/apidocs/* docs/${VERSION}/apidocs/
         cp -r ../target/reports/testapidocs/* docs/${VERSION}/testapidocs/
 
-        # Add a deployment timestamp or small change to force updates
+        # Add a deployment timestamp
         echo "Deployment timestamp: $(date)" > docs/${VERSION}/deploy-info.txt
 
-        # Check if there are changes to commit
-        if git diff --quiet docs/${VERSION}; then
-          echo "No changes in the documentation; skipping deployment."
-          exit 0
-        fi
-
-        # Commit and push the changes to the gh-pages branch
+        # Commit and push the changes
         git add docs/${VERSION}
-        git commit -m "Deploy Javadocs for version ${VERSION}"
-        git push -f origin gh-pages
+        git commit -m "Deploy Javadocs for version ${VERSION}" || echo "No changes to commit"
+        git push origin gh-pages
