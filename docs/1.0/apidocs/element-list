@@ -3,5 +3,5 @@ org.apache.ruples.abztract
 org.apache.ruples.immutable
 org.apache.ruples.mutable
 org.apache.ruples.mutable.table
-org.apache.ruples.plantuml
+org.apache.ruples.uml
 org.apache.ruples.util
