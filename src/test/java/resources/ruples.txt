@@ -1,0 +1,2490 @@
+2024-12-05 01:02:57 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:02:57 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:02:57 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:02:57 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:02:59 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:03:00 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:03:03 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:03:03 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:03:03 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:03:03 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:03:04 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:03:04 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:03:04 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:03:04 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:03:04 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:03:04 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:03:07 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:03:07 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 01:09:20 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:09:20 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:09:20 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:09:20 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:09:22 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:09:23 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:09:25 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:09:25 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:09:26 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:09:28 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:09:29 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 01:12:45 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:12:45 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:12:45 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:12:45 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:12:47 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:12:48 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:12:51 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:12:53 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:12:55 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 01:14:31 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:14:31 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:14:31 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:14:31 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:14:32 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:14:34 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:14:36 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:14:39 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:14:40 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 01:17:47 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:17:47 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:17:47 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:17:47 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:17:48 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:17:50 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:17:52 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:17:55 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:17:56 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 01:24:06 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:24:06 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:24:06 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:24:06 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:24:08 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:24:09 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:24:11 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:24:11 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:24:11 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:24:11 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:24:12 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:24:12 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:24:12 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:24:12 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:24:12 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:24:12 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:24:14 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:24:15 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 01:31:19 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:31:19 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:31:19 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:31:19 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:31:20 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:31:20 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:31:21 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:31:22 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:31:25 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:31:28 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:31:29 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 01:34:02 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 01:34:02 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 01:34:02 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 01:34:02 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 01:34:03 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 01:34:04 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 01:34:05 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 01:34:07 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 01:34:07 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 01:34:07 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 01:34:07 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:34:08 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 01:34:08 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 01:34:08 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 01:34:08 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 01:34:08 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 01:34:08 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 01:34:11 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 01:34:12 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 02:40:51 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 02:40:51 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 02:40:51 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 02:40:51 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 02:40:53 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 02:40:54 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 02:40:57 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 02:41:00 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 02:41:01 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.
+2024-12-05 02:45:00 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) ruple4.toString()
+2024-12-05 02:45:00 INFO  o.apache.ruples.immutable.Ruple4Test - Ruple4[first=1, second=two, third=3.0, fourth=true]
+2024-12-05 02:45:00 INFO  o.apache.ruples.immutable.Ruple4Test - (Ruple4Test::testXmlSerialization) xml
+2024-12-05 02:45:00 INFO  o.apache.ruples.immutable.Ruple4Test - <Ruple4>
+  <first>1</first>
+  <second>two</second>
+  <third>3.0</third>
+  <fourth>true</fourth>
+</Ruple4>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple1
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple1>
+  <first>First</first>
+</Ruple1>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple1
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First"}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple2
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple2>
+  <first>First</first>
+  <second>2</second>
+</Ruple2>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple2
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple3
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple3>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+</Ruple3>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple3
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple4
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple4>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+</Ruple4>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple4
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple5
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple5>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+</Ruple5>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple5
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A"}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple6
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple6>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+</Ruple6>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple6
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six"}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple7
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple7>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+</Ruple7>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple7
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple8
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple8>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+</Ruple8>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple8
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple9
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple9>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+</Ruple9>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple9
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple10
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple10>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+</Ruple10>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple10
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple11
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple11>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+</Ruple11>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple11
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh"}
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) JacksonSerializer for: Ruple12
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - <Ruple12>
+  <first>First</first>
+  <second>2</second>
+  <third>true</third>
+  <fourth>4.0</fourth>
+  <fifth>A</fifth>
+  <sixth>Six</sixth>
+  <seventh>7</seventh>
+  <eighth>8.0</eighth>
+  <ninth>9</ninth>
+  <tenth>10</tenth>
+  <eleventh>Eleventh</eleventh>
+  <twelfth>10000000000000</twelfth>
+</Ruple12>
+
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - (RupleCreateNextTest::testCreateNextAndSerialization) GsonSerializer for: Ruple12
+2024-12-05 02:45:02 INFO  o.a.r.immutable.RupleCreateNextTest - {"first":"First","second":2,"third":true,"fourth":4.0,"fifth":"A","sixth":"Six","seventh":7,"eighth":8.0,"ninth":9,"tenth":10,"eleventh":"Eleventh","twelfth":10000000000000}
+2024-12-05 02:45:03 INFO  o.a.r.immutable.RupleToTupleTest - (RupleToTupleTest::testRupleToTupleConversion) test completed successfully!
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataFromH2Database) muTableKV.toString()
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}, {key=description, value=Maven Core}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}, {key=description, value=Spring Core}}
+}
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testPopulateDataWithHardcodedItems) muTableKV.toString()
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml) muTableKV.toString()
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - MuTableKV{
+ 0: MuTableRow{{key=groupId, value=org.apache}, {key=artifactId, value=maven-core}, {key=version, value=3.9}}
+ 1: MuTableRow{{key=groupId, value=org.springframework}, {key=artifactId, value=spring-core}, {key=version, value=5.2}}
+}
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JAXBSerializer) xmlJABX
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rows>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.apache</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">maven-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">3.9</value>
+        </keyValue>
+    </row>
+    <row>
+        <keyValue>
+            <key xsi:type="xs:string">groupId</key>
+            <value xsi:type="xs:string">org.springframework</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">artifactId</key>
+            <value xsi:type="xs:string">spring-core</value>
+        </keyValue>
+        <keyValue>
+            <key xsi:type="xs:string">version</key>
+            <value xsi:type="xs:string">5.2</value>
+        </keyValue>
+    </row>
+</rows>
+
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - (MuTableKVTest::testSerializeToXml::JacksonSerializer) xmlJackson
+2024-12-05 02:45:06 INFO  o.a.ruples.mutable.MuTableKVTest - <MuTableKV>
+  <tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.apache</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>maven-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>3.9</value>
+        </rowList>
+      </rowList>
+    </tableData>
+    <tableData>
+      <rowList>
+        <rowList>
+          <key>groupId</key>
+          <value>org.springframework</value>
+        </rowList>
+        <rowList>
+          <key>artifactId</key>
+          <value>spring-core</value>
+        </rowList>
+        <rowList>
+          <key>version</key>
+          <value>5.2</value>
+        </rowList>
+      </rowList>
+    </tableData>
+  </tableData>
+</MuTableKV>
+
+2024-12-05 02:45:09 INFO  o.a.ruples.mutable.TupleToRupleTest - (TupleToRupleTest::testTupleToRupleConversion) test completed successfully !
+2024-12-05 02:45:10 INFO  o.a.ruples.util.PropertiesProvider - [Info] (PropertiesProvider:loadProperties) Properties file <application.properties> loaded successfully.

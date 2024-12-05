@@ -1,0 +1,65 @@
+name: Deploy Versioned Javadocs
+
+#on:
+#  push:
+#    branches:
+#      - main  
+on:
+  workflow_dispatch:  
+
+jobs:
+  deploy-javadocs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17' 
+        distribution: 'temurin'
+
+    - name: Install Graphviz
+      run: sudo apt-get update && sudo apt-get install -y graphviz
+
+    - name: Build project and generate Javadocs
+      run: |
+        mvn clean install javadoc:javadoc
+        mvn clean install javadoc:test-javadoc
+
+    - name: Deploy Javadocs with versioning
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+        if git ls-remote --heads origin gh-pages; then
+          echo "gh-pages branch exists"
+          git clone --single-branch --branch gh-pages https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
+        else
+          echo "gh-pages branch does not exist. Creating..."
+          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
+          cd gh-pages
+          git checkout --orphan gh-pages
+          git reset --hard
+          git commit --allow-empty -m "Initial commit on gh-pages branch"
+          git push origin gh-pages
+        fi
+        
+        cd gh-pages
+
+        mkdir -p docs/${VERSION}/apidocs
+        mkdir -p docs/${VERSION}/testapidocs
+
+        cp -r ../target/reports/apidocs/* docs/${VERSION}/apidocs/
+        cp -r ../target/reports/testapidocs/* docs/${VERSION}/testapidocs/
+
+        echo "Deployment timestamp: $(date)" > docs/${VERSION}/deploy-info.txt
+
+        git add docs/${VERSION}
+        git commit -m "Deploy Javadocs for version ${VERSION}"
+        git push -f origin gh-pages
