@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"io.github.abritoh.ruples.immutable"},{"l":"io.github.abritoh.ruples.mutable"}];updateSearchResults();
