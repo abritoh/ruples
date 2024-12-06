@@ -8,10 +8,10 @@ _**Comprehensive Implementation of Immutable Ruples and Mutable Tuples in Java.*
 
 The Ruples Project combines the reliability of **immutable records** with the flexibility of **mutable tuples**, all seamlessly integrated with Java's serialization capabilities.
 
-### ChangeLog
-
-  - Version 1.1: [Issue Report: Challenges Publishing to Maven Central and origin of the changes](./src/test/java/resources/deployment-issues-2024-1205.md)
-
+### Changelog
+  
+  - Version 1.1 | 2024-1205: [Issue Report ─ Challenges Publishing to Maven Central and origin of the changes](./src/test/java/resources/deployment-issues-2024-1205.md). Maven Central Repository guidelines applied.
+  - Version 1.0 | 2024-1118: Ruples & Tuples Initial version 
 
 ## Key Features
 
@@ -27,25 +27,26 @@ The Ruples Project combines the reliability of **immutable records** with the fl
 - **JAXB-Serializable Representation**: MuTableKV offers a versatile, table-like structure where each row is a list of key-value pairs.
 - **Full Serializability**: Whether you're working with predefined data or dynamically populated rows from a database, MuTableKV ensures that your data structure is always serializable and ready for data exchange between layers of the application and with external application.
 
-Dive in and see how Ruples can enhance your coding experience!
+Dive in and see how Ruples & Tuples can enhance your coding experience!
 
 ## Versioned JavaDoc
 
-## Version 1.0
+### Version 1.1
 <ul>
-<li>Main API Documentation: 
+<li>Main Api documentation: 
+<a target="_blank" href="https://abritoh.github.io/ruples/1.1/apidocs">https://abritoh.github.io/ruples/1.1/apidocs</a></li>
+<li>Test Api documentation: 
+<a target="_blank" href="https://abritoh.github.io/ruples/1.1/testapidocs">https://abritoh.github.io/ruples/1.1/testapidocs</a> </li>
+</ul>
+
+### Version 1.0
+<ul>
+<li>Main Api documentation: 
 <a target="_blank" href="https://abritoh.github.io/ruples/1.0/apidocs">https://abritoh.github.io/ruples/1.0/apidocs</a></li>
-<li>Test API Documentation: 
+<li>Test Api documentation: 
 <a target="_blank" href="https://abritoh.github.io/ruples/1.0/testapidocs">https://abritoh.github.io/ruples/1.0/testapidocs</a> </li>
 </ul>
 
-## Version 1.1
-<ul>
-<li>Main API Documentation: 
-<a target="_blank" href="https://abritoh.github.io/ruples/1.0/apidocs">https://abritoh.github.io/ruples/1.1/apidocs</a></li>
-<li>Test API Documentation: 
-<a target="_blank" href="https://abritoh.github.io/ruples/1.0/testapidocs">https://abritoh.github.io/ruples/1.1/testapidocs</a> </li>
-</ul>
 
 ## Example Usage
 
