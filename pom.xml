@@ -5,11 +5,11 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.clusterbr.ruples</groupId>
+  <groupId>io.github.abritoh</groupId>
   <artifactId>ruples</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
-  <name>ruples</name>
+  <name>io.github.abritoh:ruples</name>
   <url>https://github.com/abritoh/ruples</url>
   <description>Comprehensive Implementation of Immutable Ruples and Mutable Tuples in Java</description>
 
@@ -26,6 +26,7 @@
     <developer>
       <id>abritoh</id>
       <name>ARBR</name>
+      <email>arcbrth@gmail.com</email>
       <url>https://github.com/abritoh</url>
     </developer>
   </developers>
@@ -224,13 +225,15 @@
         <executions>
           <execution>
             <id>exec-1st-uml-processing</id>
-            <phase>process-classes</phase>
+            <!--<phase>process-classes</phase>-->
+            <phase>test</phase>
             <goals>
               <goal>java</goal>
             </goals>
             <configuration>
-              <mainClass>org.clusterbr.ruples.uml.UmlProcessor</mainClass>
-              <classpathScope>compile</classpathScope>
+              <mainClass>io.github.abritoh.ruples.uml.UmlProcessor</mainClass>
+              <!--<classpathScope>compile</classpathScope>-->
+              <classpathScope>test</classpathScope>
             </configuration>
           </execution>
         </executions>
@@ -241,7 +244,7 @@
         <artifactId>maven-resources-plugin</artifactId>
         <executions>
           <execution>
-            <id>cp-plantuml-images-main-javadoc</id>
+            <id>cp-plantuml-images-to-apidocs</id>
             <phase>prepare-package</phase>
             <goals>
               <goal>copy-resources</goal>
@@ -261,7 +264,7 @@
             </configuration>
           </execution>
           <execution>
-            <id>cp-plantuml-images-testapidocs-javadoc</id>
+            <id>cp-plantuml-images-to-testapidocs</id>
             <phase>prepare-package</phase>
             <goals>
               <goal>copy-resources</goal>
@@ -329,50 +332,81 @@
         </executions>
       </plugin>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>3.2.1</version>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>3.2.7</version>
-        <configuration>
-          <keyname>${env.GPG_KEYID}</keyname>
-          <passphrase>${env.GPG_PASSPHRASE}</passphrase>
-        </configuration>
-        <executions>
-          <execution>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
-      <plugin>
-        <groupId>org.sonatype.central</groupId>
-        <artifactId>central-publishing-maven-plugin</artifactId>
-        <version>0.6.0</version>
-        <extensions>true</extensions>
-        <configuration>
-          <publishingServerId>central</publishingServerId>
-        </configuration>
-      </plugin>
-
     </plugins>
-
   </build>
+
+  <profiles>
+    <!-- profile:release -->
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>3.2.1</version>
+            <executions>
+              <execution>
+                <id>attach-source-code-to-jar</id>
+                <phase>package</phase>
+                <goals>
+                  <!--<goal>jar</goal>-->
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>3.2.7</version>
+            <configuration>
+              <keyname>${gpg.keyid}</keyname>
+              <passphrase>${gpg.passphrase}</passphrase>
+            </configuration>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <version>0.6.0</version>
+            <extensions>true</extensions>
+            <configuration>
+              <publishingServerId>central</publishingServerId>
+              <autoPublish>true</autoPublish>
+            </configuration>
+            <executions>
+              <execution>
+                <id>deploy-jar-to-central</id>
+                <phase>deploy</phase>
+                <goals>
+                  <goal>publish</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  <distributionManagement>
+    <repository>
+      <id>central</id> 
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
 </project>

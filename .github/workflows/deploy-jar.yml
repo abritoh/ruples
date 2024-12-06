@@ -1,0 +1,66 @@
+name: Deploy Jar
+
+#on:
+#  push:
+#    branches:
+#      - main  
+on:
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install GPG
+      run: sudo apt-get update && sudo apt-get install -y gnupg
+
+    - name: Set up GPG
+      run: |
+        echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+      env:
+        GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+
+    - name: Configure GPG
+      run: |
+        git config --global user.signingkey ${{ secrets.GPG_KEYID }}
+        git config --global gpg.program gpg
+
+    - name: Create Maven settings.xml
+      run: |
+        mkdir -p ~/.m2
+        cat > ~/.m2/settings.xml <<EOL
+        <settings>
+          <profiles>
+            <profile>
+              <id>release</id>
+              <properties>
+                <gpg.executable>gpg</gpg.executable>
+                <gpg.keyid>${{ secrets.GPG_KEYID }}</gpg.keyid>
+                <gpg.passphrase>${{ secrets.GPG_PASSPHRASE }}</gpg.passphrase>
+              </properties>
+            </profile>
+          </profiles>
+          <activeProfiles>
+            <activeProfile>release</activeProfile>
+          </activeProfiles>
+        </settings>
+        EOL
+
+    - name: Build and sign artifacts
+      env:
+        GPG_KEYID: ${{ secrets.GPG_KEYID }}
+        GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+      run: |
+        mvn clean install -P release
+
+    - name: Deploy to Maven Central
+      if: github.ref == 'refs/heads/main'
+      env:
+        GPG_KEYID: ${{ secrets.GPG_KEYID }}
+        GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+      run: |
+        mvn deploy -P release

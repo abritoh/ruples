@@ -8,6 +8,11 @@ _**Comprehensive Implementation of Immutable Ruples and Mutable Tuples in Java.*
 
 The Ruples Project combines the reliability of **immutable records** with the flexibility of **mutable tuples**, all seamlessly integrated with Java's serialization capabilities.
 
+### ChangeLog
+
+  - Version 1.1: [Issue Report: Challenges Publishing to Maven Central and origin of the changes](./src/test/java/resources/deployment-issues-2024-1205.md)
+
+
 ## Key Features
 
 ### Mutable Tuples
@@ -24,12 +29,22 @@ The Ruples Project combines the reliability of **immutable records** with the fl
 
 Dive in and see how Ruples can enhance your coding experience!
 
-## JavaDoc
+## Versioned JavaDoc
+
+## Version 1.0
 <ul>
 <li>Main API Documentation: 
 <a target="_blank" href="https://abritoh.github.io/ruples/1.0/apidocs">https://abritoh.github.io/ruples/1.0/apidocs</a></li>
 <li>Test API Documentation: 
 <a target="_blank" href="https://abritoh.github.io/ruples/1.0/testapidocs">https://abritoh.github.io/ruples/1.0/testapidocs</a> </li>
+</ul>
+
+## Version 1.1
+<ul>
+<li>Main API Documentation: 
+<a target="_blank" href="https://abritoh.github.io/ruples/1.0/apidocs">https://abritoh.github.io/ruples/1.1/apidocs</a></li>
+<li>Test API Documentation: 
+<a target="_blank" href="https://abritoh.github.io/ruples/1.0/testapidocs">https://abritoh.github.io/ruples/1.1/testapidocs</a> </li>
 </ul>
 
 ## Example Usage

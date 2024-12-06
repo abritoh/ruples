@@ -41,13 +41,8 @@ jobs:
           echo "gh-pages branch exists"
           git clone --single-branch --branch gh-pages https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
         else
-          echo "gh-pages branch does not exist. Creating..."
-          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} gh-pages
-          cd gh-pages
-          git checkout --orphan gh-pages
-          git reset --hard
-          git commit --allow-empty -m "Initial commit on gh-pages branch"
-          git push origin gh-pages
+          echo "gh-pages branch does not exist."
+          exit 1
         fi
         
         cd gh-pages
