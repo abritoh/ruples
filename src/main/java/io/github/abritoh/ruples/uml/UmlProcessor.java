@@ -17,6 +17,8 @@ import net.sourceforge.plantuml.SourceFileReader;
 
 /**
  * 
+ * O_____O
+ * 
  * <p><b>Class Diagram:</b></p>
  * <div style="text-align:center;"><img src="{@docRoot}/generated-resources/uml/images/UmlProcessor.png" alt="UMLDiagram"></div>
  * 

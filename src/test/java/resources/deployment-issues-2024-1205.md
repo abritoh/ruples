@@ -4,12 +4,13 @@
 
 The goal is to publish/deploy the JAR artifact to the **Maven Central Repository**, with adherence to the Maven's & Sonatype guidelines and procedures.
 
+Updated: **2025-02-01**
+
 Date of execution: *2024-12|4/5*
 
 ## General Procedure 
 
 Below the general sequence of steps performed, resulting in this Version [1.1]:
-
 
 1. **Modify the project coordinates in the POM** as required by  [Maven Central](https://central.sonatype.com).
 2. **Add metadata information** Developer, SCM, repository, license, etc.  
@@ -130,8 +131,22 @@ Below the general sequence of steps performed, resulting in this Version [1.1]:
 
 ## Summary
 
-Despite extensive efforts, a task that could be straightforward as publishing to Maven Central seems to be tedious and ambiguous. This complexity/obfuscation may be caused from Maven Central’s ongoing migration from file-system storage to blob-storage, which involves significant technical challenges. Additionally, some references in the documentation are outdated, dating back over a decade. The identified issues require further investigation to ensure proper configuration, accurate token and credential provisioning, and more comprehensive/complete feedback from the automated Maven's validation process.
+Despite considerable efforts, a task that could and should be straightforward as publishing to Maven Central (central.sonatype.com) seems to be tedious and ambiguous. This complexity/obfuscation may be caused from Maven Central's ongoing migration from file-system storage to blob-storage, which involves significant technical challenges for them. Additionally, some references in the documentation are outdated, dating back over a decade. The identified issues require further investigation to ensure proper configuration, accurate token and credential provisioning, and more comprehensive/complete feedback from the automated Maven's validation process.
 
+## **Update**: February 1, 2025
+
+When I wrote this project (**Ruples**), I was working on another major project, **ZupportL5**. Previously, I had implemented a Tuple class for C# and Java (KeyValuePair.cs / KeyValuePair.java / Tuple.java) to be used in some projects I have worked on. So, I decided to extend these container classes to support up to 12 elements by implementing two versions: **Tuples and Ruples in Java**. The Tuples Java package implements the **mutable version**, while the Ruples Java package implements the **immutable** version. Also knowing that some other languages like C++ include Tuples as part of the **Standard Template Library** (STL, since version C++11), similarly for Java, there exist libraries like **Apache Commons Lang** or **Vavr** that provide their own Tuples implementation. Once implemented, I decided to publish this JAR to **Maven Central** to be shared among other Java developers, but I encountered the issue described in this report during the publishing process. The issue was due to Maven's migration of their technology and the upgrade of their storage system, which did not affect users who already had an account in Maven Central before the migration occurred.
+
+Since I have worked with different teams, one of which is the Support Engineering team, I know that handling any issue methodologically is not only a necessary activity for **tracking**, **documenting**, **following up** but also for **finding-the-root-cause** of the issue (that's one of the scenarios covered by the ZupportL5 system) to be solved, taking into account as well and understanding that the Provider itself (in this case, Sonatype / Maven Central) needs, like any other **Technology/service Provider**, feedback about their products so they can improve their practices, processes, and technologies.
+
+Approximately one month and half later, I reviewing Maven Central, and I noticed many changes to their Systems, documentation, sites, etc. I didn't try again to deploy this JAR (**project Ruples**); I'll probably do it later (in the future) ─since it's not an urgent matter for me─. It's awesome when a company listens to the opinions of customers/users, that's how the quality and reliability of any product or service can be improved for the benefit of everyone who uses the technology.
+
+Maven Central New Site:
+- https://status.maven.org
+
+Maven Central Site:
+
+- https://central.sonatype.com
 
 ___
 
@@ -141,8 +156,11 @@ ___
 
 ![NAMESAPCE](./images/maven-central-name-space.png "NAMESAPCE")
 
-
-![DEPLOYMENT-ISSUE](./images/bundle-deploy-to-mavenc-issue.png "DEPLOYMENT-ISSUE")
-
 ![MAVEN-CENTRAL-MIGRATIONS](./images/maven-central-migrations.png "MAVEN-CENTRAL-MIGRATIONS")
+
+![MAVEN-CENTRAL-OPERATIONS](./images/maven-central-operational-status.png "MAVEN-CENTRAL")
+
+___
+
+**ClusterBR**
 

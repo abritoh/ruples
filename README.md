@@ -10,7 +10,8 @@ The Ruples Project combines the reliability of **immutable records** with the fl
 
 ### Changelog
   
-  - Version 1.1 | 2024-1205: [Issue Report ─ Challenges Publishing to Maven Central and origin of the changes](./src/test/java/resources/deployment-issues-2024-1205.md). Maven Central Repository guidelines applied.
+  - Version 1.1 | 2024-1205: [Issue Report ─ Challenges Publishing to Maven Central and origin of the changes](./src/test/java/resources/deployment-issues-2024-1205.md). Maven Central Repository guidelines applied. 
+    - Comment added to the issue-report on **February 1, 2025**.
   - Version 1.0 | 2024-1118: Ruples & Tuples Initial version 
 
 ## Key Features
